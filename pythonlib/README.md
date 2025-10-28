@@ -7,7 +7,7 @@
 </div>
 
 > [!NOTE]
-> All the the latest documentation is avaliable [here](https://camoufox.com/python).
+> All the latest documentation is available [here](https://camoufox.com/python).
 
 ---
 
@@ -90,4 +90,4 @@ The GUI provides:
 
 ## Usage
 
-All of the latest documentation is avaliable at [camoufox.com/python](https://camoufox.com/python).
+All of the latest documentation is available at [camoufox.com/python](https://camoufox.com/python).

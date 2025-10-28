@@ -185,8 +185,10 @@ class CamoufoxGUI:
             messagebox.showerror("Error", "Please enter a target URL")
             return
         
-        # Create temporary file for output
-        self.output_file = Path(tempfile.mktemp(suffix=f".{self._get_file_extension()}"))
+        # Create temporary file for output using secure method
+        fd, temp_path = tempfile.mkstemp(suffix=f".{self._get_file_extension()}")
+        os.close(fd)  # Close the file descriptor immediately as we'll let playwright write to it
+        self.output_file = Path(temp_path)
         
         # Build command
         cmd = self._build_codegen_command(url)
