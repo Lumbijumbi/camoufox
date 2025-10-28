@@ -7,7 +7,7 @@
 </div>
 
 > [!NOTE]
-> All the the latest documentation is avaliable [here](https://camoufox.com/python).
+> All the latest documentation is available [here](https://camoufox.com/python).
 
 ---
 
@@ -58,6 +58,7 @@ Options:
 
 Commands:
   fetch    Fetch the latest version of Camoufox
+  gui      Launch the Camoufox GUI for Playwright automation
   path     Display the path to the Camoufox executable
   remove   Remove all downloaded files
   server   Launch a Playwright server
@@ -67,8 +68,26 @@ Commands:
 
 </details>
 
+---
+
+## GUI for Playwright Automation
+
+Camoufox includes a graphical user interface for recording and automating browser interactions:
+
+```bash
+camoufox gui
+```
+
+The GUI provides:
+- 🎯 Target URL input
+- ⚙️ Configuration options (headless mode, viewport, language, output format)
+- 🔴 Record Flow functionality using Playwright's codegen
+- 💾 Save and export generated scripts
+
+[Learn more about the GUI →](camoufox/gui/README.md)
+
 <hr width=50>
 
 ## Usage
 
-All of the latest documentation is avaliable at [camoufox.com/python](https://camoufox.com/python).
+All of the latest documentation is available at [camoufox.com/python](https://camoufox.com/python).
