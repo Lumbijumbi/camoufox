@@ -167,5 +167,18 @@ def version() -> None:
         rprint("(Up to date!)", fg="yellow")
 
 
+@cli.command(name='gui')
+def gui() -> None:
+    """
+    Launch the Camoufox GUI for Playwright automation
+    """
+    try:
+        from .gui import launch_gui
+        launch_gui()
+    except ImportError as e:
+        rprint(f"Failed to launch GUI: {str(e)}", fg="red")
+        rprint("Make sure tkinter is installed on your system.", fg="yellow")
+
+
 if __name__ == '__main__':
     cli()
